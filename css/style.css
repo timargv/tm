@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Roboto|Roboto+Condensed');
+
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+/* def */
+.tm {
+  /* max-width: 1440px; */
+  margin: 0 auto;
+}
+
+.dop_w {
+    min-width: 1256px;
+}
+
+
+/* header_line */
+.header_line {
+  background: #393939;
+  color: #cbcbcb;
+  font-size: 14px;
+  /* line-height: 50px; */
+  height: 50px;
+}
+.header_line ul {
+    margin: 0 -15px;
+}
+.header_line ul li {}
+.header_line a {
+    padding: 1.036em 1rem;
+    font-size: 14px;
+    color: #cbcbcb;
+}
+.header_line a:hover {}
+.header_line a i {}
+.header_line a.line {}
+.header_line a.gren {
+  color: #6fc461;
+}
+.header_line a.gren i {}
