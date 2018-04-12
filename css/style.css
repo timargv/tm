@@ -67,3 +67,18 @@ body {
   color: #fbe940;
   margin-left: 5px;
 }
+
+/* yellow */
+.yellow {
+    height: 160px;
+    /* background: #fbe940; */
+}
+
+.header {
+    padding: 13px 0 13px;
+}
+.logo {
+    padding: 30px 0 30px 120px;
+}
+.logo a.tel-h {}
+.logo a.call-h {}
