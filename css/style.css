@@ -9,7 +9,7 @@ font-family: 'Open Sans', sans-serif;
 
 body {
   font-family: 'Roboto', sans-serif;
-
+  background: url('../3.__________________.png') no-repeat center top;
 }
 
 
@@ -35,16 +35,35 @@ body {
 .header_line ul {
     margin: 0 -15px;
 }
+.header_line ul.justify-content-end {
+    margin: 0 -30px 0px 0px;
+}
 .header_line ul li {}
+.header_line ul li a.status::before {
+    text-decoration: underline;
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 16px;
+    width: 75%;
+    border-bottom: 1px dashed;
+}
 .header_line a {
     padding: 1.036em 1rem;
     font-size: 14px;
     color: #cbcbcb;
+    position: relative;
 }
-.header_line a:hover {}
+.header_line a:hover {
+  color: #cbcbcb;
+}
 .header_line a i {}
 .header_line a.line {}
 .header_line a.gren {
   color: #6fc461;
 }
 .header_line a.gren i {}
+.header_line a.map-i i {
+  color: #fbe940;
+  margin-left: 5px;
+}
