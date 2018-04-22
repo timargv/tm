@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <title>Hello, world!</title>
@@ -15,113 +16,128 @@
   <body>
 
     <div class="tm">
-        <div class="header_line sticky-top">
-          <div class="container dop_w">
-            <div class="col clearfix">
-              <div class="row">
-                <ul class="nav col-8 justify-content-start">
-                  <li class="nav-item">
-                    <a class="nav-link disabled " href="#">Оплата и доставка</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Горантия и возврат</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link gren disabled" href="#">Бонусная программа <i class="fa fa-bolt" aria-hidden="true"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link status" href="#">Статус заказа</a>
-                  </li>
-                </ul>
-                <ul class="nav col justify-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Воронежская область</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link map-i " href="#">Воронеж <i class="fa fa-map-marker" aria-hidden="true"></i></a>
-                  </li>
-                </ul>
-              </div>
+      <!-- Вехняя шапка -->
+      <div class="header_line sticky-top">
+        <div class="container dop_w">
+          <div class="col clearfix">
+            <div class="row">
+              <ul class="nav col-8 justify-content-start">
+                <li class="nav-item">
+                  <a class="nav-link disabled " href="#">Оплата и доставка</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Горантия и возврат</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link gren disabled" href="#">Бонусная программа <i class="fa fa-bolt" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link status" href="#">Статус заказа</a>
+                </li>
+              </ul>
+              <ul class="nav col justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Воронежская область</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link map-i " href="#">Воронеж <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="yellow">
-          <div class="container dop_w">
-            <div class="header navbar navbar-expand  clearfix">
-              <a class="navbar-brand mr-2" href="#">
-                <img src="image/logo-bnoh.svg" class="logo" width="76" height="76" alt="">
-              </a>
-              <div class="navbar-collapse row ml-1">
+      <!-- Нижняя шапка -->
+      <div class="yellow">
+        <div class="container dop_w">
+          <div class="header navbar navbar-expand  clearfix">
+            <a class="navbar-brand mr-2" href="#">
+              <img src="image/logo-bnoh.svg" class="logo" width="76" height="76" alt="">
+            </a>
+            <div class="navbar-collapse row ml-1">
 
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a href="#" class="tel-h nav-link">8 800 100-10-10</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="call-h nav-link">Заказать звонок</a>
-                  </li>
-                </ul>
-                <ul class="nav justify-content-end header-right">
+              <!-- левая сторона низ меню -->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a href="#" class="tel-h nav-link">8 800 100-10-10</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="call-h nav-link">Заказать звонок</a>
+                </li>
+              </ul>
 
-                  <li class="nav-item">
-                    <a class="nav-link profile" href="#">Войти</a>
-                  </li>
-                  <li class="nav-item tm_item">
-                    <a class="nav-link" href="#">
-                      <span class="fa fa-bar-chart" aria-hidden="true">
-                        <i>999</i>
-                      </span>
-                      Сравнение
-                    </a>
-                  </li>
-                  <li class="nav-item tm_shop-cart">
-                    <a class="nav-link" href="#">
-                      <span class="fa fa-shopping-cart float-left" aria-hidden="true">
-                        <i>999</i>
-                      </span>
-                      25 000 Р
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <!-- Правая сторона низ меню -->
+              <ul class="nav justify-content-end header-right">
 
+                <!-- Вход в профиль -->
+                <li class="nav-item">
+                  <a class="nav-link profile" href="#">Войти</a>
+                </li>
+
+                <!-- Количество сравнений -->
+                <li class="nav-item tm_item">
+                  <a class="nav-link" href="#">
+                    <span class="fa fa-bar-chart" aria-hidden="true">
+                      <i>999</i>
+                    </span>
+                    Сравнение
+                  </a>
+                </li>
+
+                <!-- Корзина -->
+                <li class="nav-item tm_shop-cart">
+                  <a class="nav-link" href="#">
+                    <span class="fa fa-shopping-cart float-left" aria-hidden="true">
+                      <i>999</i>
+                    </span>
+                    25 000 Р
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="menu-search">
-              <nav class="navbar navbar-expand p-0 m-0">
+          <div class="menu-search">
+            <nav class="navbar navbar-expand p-0 m-0">
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <div class="dropdown-header-menu dropdown">
-                    <div class="cat-btn-header align-middle"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Каталог товаров <i class="fa fa-bars float-right pt-1" aria-hidden="true"></i>
-                    </div>
-                    <div class="header-dropdown-menu dropdown-menu rounded-0 border-0" aria-labelledby="dropdownMenu2">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <!-- Каталог меню -->
+                <div class="dropdown-header-menu dropdown">
+                  <div class="cat-btn-header align-middle"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Каталог товаров <i class="fa fa-bars float-right pt-1" aria-hidden="true"></i>
                   </div>
-
-                  <ul class="navbar-nav-header navbar-nav mr-auto pl-4 mt-0">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Акции и распродажи</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Скидки <i class="fa fa-percent" aria-hidden="true"></i></a>
-                    </li>
-                  </ul>
-                  <form class="search-header form-inline float-right ml-2 my-xs-0">
-                    <input class="form-control  mr-0 rounded-0 border-0" type="search" placeholder="Я ищу..." aria-label="Search">
-                  </form>
+                  <div class="header-dropdown-menu dropdown-menu rounded-0 border-0" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
                 </div>
-              </nav>
-            </div>
+
+                <!-- Доп меню -->
+                <ul class="navbar-nav-header navbar-nav mr-auto pl-4 mt-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Акции и распродажи</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Скидки <i class="fa fa-percent" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+                <!-- Поисковая форма -->
+                <form class="search-header form-inline float-right ml-2 my-xs-0">
+                  <input class="form-control  mr-0 rounded-0 border-0" type="search" placeholder="Я ищу..." aria-label="Search">
+                </form>
+              </div>
+            </nav>
           </div>
         </div>
+      </div>
+
+
     </div>
 
     <!-- Optional JavaScript -->
@@ -129,6 +145,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
