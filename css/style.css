@@ -426,7 +426,7 @@ body {
 }
 .mega-menu>ul>li .drop_ch_menu>ul>li .drop_ch_menu {
   top: 0px!important;
-  background: #fbfbfb;
+  background: #f3edb2;
   display: none;
   z-index: 1;
   max-width: 330px;
@@ -455,7 +455,7 @@ body {
     width: 660px;
     min-width: 660px;
     height: 100%;
-    min-height: 717px;
+    min-height: 714px;
     box-shadow: 2px 3px 4px #2f2e2259;
     -webkit-box-shadow: 2px 3px 4px #2f2e2259;
     -moz-box-shadow: 2px 3px 4px #2f2e2259;
